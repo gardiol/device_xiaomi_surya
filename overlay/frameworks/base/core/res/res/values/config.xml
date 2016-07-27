@@ -409,7 +409,8 @@
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
-    
+    <!-- True if the device supports Sustained Performance Mode-->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
    
     <!-- List supported color modes. -->
     <integer-array name="config_availableColorModes">
