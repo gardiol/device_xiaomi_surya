@@ -4,5 +4,6 @@ persist.vendor.audio.ring.filter.mask=0
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.us.type=mius
+ro.config.media_vol_steps=25
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
