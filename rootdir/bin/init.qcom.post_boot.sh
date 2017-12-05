@@ -184,6 +184,10 @@ echo 1 > /proc/sys/kernel/sched_energy_aware
 # Turn on sleep modes.
 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 
+# Enable idle state listener
+echo 1 > /sys/class/drm/card0/device/idle_encoder_mask
+echo 100 > /sys/class/drm/card0/device/idle_timeout_ms
+
 # Enable PowerHAL hint processing
 setprop vendor.powerhal.init 1
 
