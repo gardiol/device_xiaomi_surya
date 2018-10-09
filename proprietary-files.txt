@@ -294,8 +294,8 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera service
-lib/libcameraservice.so
+# Camera service - from custom compilation
+lib/libcameraservice.so|78c11a11fa8691e42d3352aa7c0194a8a497dea8
 
 # Display calibration
 vendor/etc/hdr_config.cfg
