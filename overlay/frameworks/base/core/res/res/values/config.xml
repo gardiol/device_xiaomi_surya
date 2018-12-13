@@ -157,6 +157,8 @@
     <integer name="config_bluetooth_rx_cur_ma">20</integer>
     <integer name="config_bluetooth_tx_cur_ma">33</integer>
 
+<!-- Haptic -->
+    <bool name="config_enableHapticTextHandle">true</bool>
 
 <!-- TBD -->
     <bool name="config_dozeAfterScreenOffDefault">true</bool>
