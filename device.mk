@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Dirac
+PRODUCT_PACKAGES += \
+    XiaomiDirac
+
 # Display
 PRODUCT_PACKAGES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
