@@ -1,0 +1,5 @@
+type xiaomidirac_app, domain;
+
+app_domain(xiaomidirac_app)
+
+allow xiaomidirac_app audioserver_service:service_manager find;
