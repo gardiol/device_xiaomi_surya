@@ -88,7 +88,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    KarnaFrameworks
+    KarnaFrameworks \
+    NotchBarKiller
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
