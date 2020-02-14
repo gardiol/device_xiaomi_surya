@@ -225,6 +225,14 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_xiaomi \
+    fastbootd
+
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
