@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget 
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.phoenix
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
