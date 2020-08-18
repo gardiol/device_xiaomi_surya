@@ -93,6 +93,10 @@ echo 1 > /dev/stune/foreground/schedtune.prefer_idle
 echo 10 > /dev/stune/top-app/schedtune.boost
 echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
+# Report max frequency to unity tasks
+echo "UnityMain,libunity.so" > /proc/sys/kernel/sched_lib_name
+echo 255 > /proc/sys/kernel/sched_lib_mask_force 255
+
 # Set Memory parameters
 configure_memory_parameters
 
