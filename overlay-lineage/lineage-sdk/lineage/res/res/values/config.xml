@@ -71,4 +71,7 @@
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">232</integer>
+
+    <!-- Whether device has smaller dot/u/u notch -->
+    <bool name="config_haveDotNotch">true</bool>
 </resources>
