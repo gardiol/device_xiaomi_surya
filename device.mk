@@ -237,6 +237,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.xiaomi-libperfmgr
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
