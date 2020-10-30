@@ -1,2 +1,5 @@
+# Blur
+ro.surface_flinger.supports_background_blur=1
+
 # GBoard
 ro.com.google.ime.corner_key_r=35
