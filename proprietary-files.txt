@@ -278,6 +278,18 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
+# DRM - from surya V12.0.9.0.QJGMIXM
+modem/image/widevine.b00:vendor/firmware/widevine.b00|ede80cfa888375dd55fa086ef9b2987ecd646585
+modem/image/widevine.b01:vendor/firmware/widevine.b01|373c5f793d6beb7d5a31403b8bb27f60cbcf2fc0
+modem/image/widevine.b02:vendor/firmware/widevine.b02|53dcdaad8823e42cb11bcf40a9ad68c3999179e8
+modem/image/widevine.b03:vendor/firmware/widevine.b03|b6f45c28c64420722219a39673dfd98a76df1909
+modem/image/widevine.b04:vendor/firmware/widevine.b04|a010220bbc350cf36f2cd733afc07c7d4dc0921f
+modem/image/widevine.b05:vendor/firmware/widevine.b05|be33cd6286083067250bf79f86cc91ec78b5d056
+modem/image/widevine.b06:vendor/firmware/widevine.b06|e54a8628aae9253a1a38e485ab0bcb1031ff8c01
+modem/image/widevine.b07:vendor/firmware/widevine.b07|fb7d01a97ff4d54e6bb5a9a2e48a15a239d2edcd
+modem/image/widevine.mdt:vendor/firmware/widevine.mdt|509ea46992409733cef50772fb6af5a381860b99
+vendor/lib64/liboemcrypto.so|4bc85a74d947a1da5c4fcbe164bf06c36b264c2a
+
 # Fingerprint - from surya
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
