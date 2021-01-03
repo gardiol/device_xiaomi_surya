@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_surya.mk
+    $(LOCAL_DIR)/lineage_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_surya-user \
-    havoc_surya-userdebug \
-    havoc_surya-eng
+    lineage_surya-user \
+    lineage_surya-userdebug \
+    lineage_surya-eng
