@@ -114,7 +114,8 @@ static void handleNotification(const LightState& state) {
 
     switch (state.flashMode) {
         case Flash::HARDWARE:
-            set(WHITE_LED BREATH, 1);
+// The white led has no "breath" file!
+//            set(WHITE_LED BREATH, 1);
         case Flash::TIMED:
             /* Blinking */
             set(WHITE_LED DELAY_OFF, state.flashOnMs);
