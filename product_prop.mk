@@ -24,7 +24,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicerec=true \
-    persist.vendor.audio.fluence.audiorec=true
+    persist.vendor.audio.fluence.audiorec=false
 
 # Smart fps switching
 PRODUCT_PRODUCT_PROPERTIES += \
