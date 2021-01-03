@@ -5,13 +5,13 @@ Unified Device Tree for Xiaomi POCO X3 / X3 NFC
 
 The Xiaomi POCO X3 / X3 NFC (codenamed _"karna / surya"_) are mid range smartphones from Xiaomi's sub-brand Redmi and Poco, respectively.
 
-Both devices were announced and released in September 2020.
+Poco X3 was announced and released in September 2020.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-SoC     | Qualcomm SM6150 Snapdragon 732G
+SoC     | Qualcomm SDM732 Snapdragon 732G
 CPU     | Octa-core (2x2.3 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)
 GPU     | Adreno 618
 Memory  | 6/8 GB RAM
