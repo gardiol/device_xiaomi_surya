@@ -137,8 +137,8 @@ static void workaround_snet_properties() {
         property_override(snet_prop_key[i], snet_prop_value[i]);
     }
 
-    chmod("/sys/fs/selinux/enforce", 0640);
-    chmod("/sys/fs/selinux/policy", 0440);
+//    chmod("/sys/fs/selinux/enforce", 0640);
+//    chmod("/sys/fs/selinux/policy", 0440);
 }
 
 void load_device_properties() {
