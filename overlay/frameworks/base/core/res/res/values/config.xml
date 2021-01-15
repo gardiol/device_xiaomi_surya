@@ -276,7 +276,8 @@
     <integer name="config_minimumScreenOffTimeout">6000</integer>
     
     <integer name="config_multiuserMaxRunningUsers">2</integer>
-
+    
+    <integer name="dock_enter_exit_duration">220</integer>
 
     <integer name="config_screenBrightnessForVrSettingDefault">100</integer>
     <integer name="config_screenBrightnessForVrSettingMaximum">255</integer>
