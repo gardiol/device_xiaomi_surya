@@ -258,7 +258,27 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
+    <integer name="config_screenBrightnessDoze">10</integer>
+
+    <integer name="config_screenBrightnessDark">1</integer>
+
+    <integer name="config_shortAnimTime">100</integer>
+    <integer name="config_mediumAnimTime">200</integer>
+    <integer name="config_longAnimTime">300</integer>
+    <integer name="config_activityDefaultDur">200</integer>
+    <integer name="config_activityShortDur">120</integer>
+    <integer name="config_buttonBrightnessSettingDefault">-1</integer>
+    <integer name="config_defaultDisplayDefaultColorMode">1</integer>
+    <integer name="config_defaultHapticFeedbackIntensity">1</integer>
+    <integer name="config_defaultVibrationAmplitude">230</integer>
+    <integer name="config_immersive_mode_confirmation_panic">0</integer>
+    <integer name="config_maximumScreenDimDuration">18000</integer>
+    <integer name="config_minimumScreenOffTimeout">6000</integer>
+
+
+    <integer name="config_screenBrightnessForVrSettingDefault">100</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">1</integer>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
