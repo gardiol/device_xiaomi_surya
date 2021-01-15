@@ -789,5 +789,9 @@
     <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
 
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
-
+    
+    <fraction name="config_prescaleAbsoluteVolume_index1">50.0%</fraction>
+    <fraction name="config_prescaleAbsoluteVolume_index2">75.000015%</fraction>
+    <fraction name="config_prescaleAbsoluteVolume_index3">95.00001%</fraction>
+    
 </resources>
