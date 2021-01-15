@@ -237,7 +237,7 @@
     <integer name="config_bluetooth_tx_cur_ma">33</integer>
 
     <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
+    <integer name="config_multiuserMaximumUsers">3</integer>
 
     <!-- Default value for led color when battery is fully charged -->
     <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>
@@ -274,6 +274,8 @@
     <integer name="config_immersive_mode_confirmation_panic">0</integer>
     <integer name="config_maximumScreenDimDuration">18000</integer>
     <integer name="config_minimumScreenOffTimeout">6000</integer>
+    
+    <integer name="config_multiuserMaxRunningUsers">2</integer>
 
 
     <integer name="config_screenBrightnessForVrSettingDefault">100</integer>
