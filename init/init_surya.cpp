@@ -101,8 +101,12 @@ void load_device_properties() {
 	
 	if (hwname == "surya") {
 		model = "M2007J20CG";
+		fingerprint = "POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.4.0.QJGMIXM:user/release-keys";
+		description = "surya_global-user 10 QKQ1.200512.002 V12.0.4.0.QJGMIXM release-keys";
 	} else if (hwname == "karna") {
 		model = "M2007J20CI";
+		fingerprint = "POCO/karna_global/karna:10/QKQ1.200512.002/V12.0.4.0.QJGMIXM:user/release-keys";
+		description = "karna_global-user 10 QKQ1.200512.002 V12.0.4.0.QJGMIXM release-keys";
 	}
       
       	set_device_props(fingerprint, 
