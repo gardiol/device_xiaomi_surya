@@ -361,7 +361,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string name="config_mainBuiltInDisplayCutout">
-        M 0,0 H -36 V 100 H 36 V 0 H 0 Z
+        M 0,0 H -36 V 91 H 36 V 0 H 0 Z
     </string>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
