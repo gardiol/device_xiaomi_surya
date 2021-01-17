@@ -143,5 +143,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Thetering offload
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0
+
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
