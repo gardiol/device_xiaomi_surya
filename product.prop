@@ -11,6 +11,9 @@ endif
 vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Graphics
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true 
 debug.sf.disable_backpressure=1 
