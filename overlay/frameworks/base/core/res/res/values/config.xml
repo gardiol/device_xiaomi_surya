@@ -792,5 +792,7 @@
     <fraction name="config_prescaleAbsoluteVolume_index1">50.0%</fraction>
     <fraction name="config_prescaleAbsoluteVolume_index2">75.000015%</fraction>
     <fraction name="config_prescaleAbsoluteVolume_index3">95.00001%</fraction>
-    
+
+    <string name="wifi_tether_configure_ssid_default">Poco X3</string>
+
 </resources>
