@@ -795,4 +795,7 @@
 
     <string name="wifi_tether_configure_ssid_default">Poco X3</string>
 
+    <string name="config_ims_package">org.codeaurora.ims</string>
+    <string name="config_mms_user_agent">Android-Mms/2.0</string>
+    <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 </resources>
