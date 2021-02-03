@@ -762,9 +762,8 @@
         <item>1,1</item>
         <item>0,1</item>
         <item>7,1</item>
-        <item>9,1</item>
     </string-array>
-
+    
     <!-- The list of vendor package signatures that should also be considered
     platform signatures, specifically for use on devices with a vendor partition. -->
     <string-array name="config_vendorPlatformSignatures">
