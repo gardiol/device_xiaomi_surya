@@ -341,63 +341,31 @@
 
 <!-- Packages and components -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-    <string-array name="config_apexBootImagePinnerServiceFiles">
-        <item>/system/framework/framework.jar</item>
-        <item>/system/framework/services.jar</item>
-        <item>/system/framework/arm64/apex.oat</item>
-        <item>/system/framework/arm64/apex-core-libart.oat</item>
-        <item>/apex/com.android.runtime/javalib/core-oj.jar</item>
-        <item>/apex/com.android.runtime/javalib/core-libart.jar</item>
-        <item>/apex/com.android.media/javalib/updatable-media.jar</item>
+        <item>"/system/framework/arm64/boot-framework.oat"</item>
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/oat/arm64/services.odex"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/framework/arm64/boot.oat"</item>
+        <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/product/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/product/priv-app/SystemUIGoogle/oat/arm64/SystemUIGoogle.odex"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
-        <string-array name="config_defaultPinnerServiceFiles">
-        <item>/system/framework/arm64/boot-framework.oat</item>
-        <item>/system/framework/framework.jar</item>
-        <item>/system/framework/oat/arm64/services.odex</item>
-        <item>/system/framework/services.jar</item>
-        <item>/system/framework/arm64/boot.oat</item>
-        <item>/system/framework/arm64/boot-core-libart.oat</item>
-        <item>/apex/com.android.runtime/javalib/core-oj.jar</item>
-        <item>/apex/com.android.runtime/javalib/core-libart.jar</item>
-        <item>/apex/com.android.media/javalib/updatable-media.jar</item>
-        <item>/product/priv-app/SystemUI/SystemUI.apk</item>
-        <item>/product/priv-app/SystemUI/oat/arm64/SystemUI.odex</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+    <string-array translatable="false" name="config_apexBootImagePinnerServiceFiles">
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/framework/arm64/apex.oat"</item>
+        <item>"/system/framework/arm64/apex-core-libart.oat"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/system/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
-    <string-array name="config_deviceDisabledComponents">
-        <item>com.android.vending/com.google.android.finsky.headless.GmsCoreUpdateService</item>
-        <item>com.android.vending/com.google.android.finsky.selfupdate.SelfUpdateInstallJob</item>
-        <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
-        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.phone.SystemUpdateChimeraActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver</item>
-        <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
-        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
-        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
-    </string-array>
-    <string-array name="config_nonBlockableNotificationPackages">
-        <item>com.android.dialer</item>
-        <item>com.android.messaging</item>
-        <item>com.google.android.dialer</item>
-    </string-array>
-    <string-array name="config_priorityOnlyDndExemptPackages">
-        <item>com.android.dialer</item>
-        <item>com.google.android.dialer</item>
-    </string-array>
-    <string-array name="config_globallyDisabledComponents">
-        <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
-        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
-        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
-    </string-array>
+    <bool name="config_pinnerCameraApp">true</bool>
+    <bool name="config_pinnerHomeApp">true</bool>
 
 </resources>
