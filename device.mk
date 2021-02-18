@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.surya
 
+# Product init
+PRODUCT_PACKAGES += \
+    init.device.rc
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
