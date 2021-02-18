@@ -1,11 +1,9 @@
-service displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-    override
-    disabled
+on init 
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_hbm
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_cabc
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_cabc_movie
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_cabc_still  
 
-service displayfeature /vendor/bin/displayfeature
-    override
-    disabled
-  
 on property:ro.boot.hwc=*
     setprop vendor.boot.hwc ${ro.boot.hwc}   
 
