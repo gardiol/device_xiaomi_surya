@@ -252,6 +252,16 @@
     <bool name="config_wifi_softap_acs_supported">true</bool>
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
     <bool name="skip_restoring_network_selection">true</bool>
+    <bool name="config_wifi_ap_mac_randomization_supported">true</bool>
+    <bool name="config_wifi_link_probing_supported">true</bool>
+    <integer translatable="false" name="config_wifi_idle_receive_cur_ma">1</integer>
+    <integer translatable="false" name="config_wifi_active_rx_cur_ma">100</integer>
+    <integer translatable="false" name="config_wifi_tx_cur_ma">250</integer>
+    <integer translatable="false" name="config_wifi_operating_voltage_mv">3800</integer>
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+    <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
+    <bool translatable="false" name="config_wifiMinConfirmationDurationSendNetworkScoreEnabled">true</bool>
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-85</integer>
     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-80</integer>
     <integer name="config_wifi_framework_wifi_score_entry_rssi_threshold_24GHz">-80</integer>
@@ -288,6 +298,9 @@
         <item>bluetooth,7,7,2,-1,true</item>
         <item>ethernet,9,9,4,-1,true</item>
     </string-array>
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+  
 
 <!-- Tethering -->
     <string name="wifi_tether_configure_ssid_default">Poco X3</string>
