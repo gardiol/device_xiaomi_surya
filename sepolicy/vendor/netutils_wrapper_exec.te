@@ -1,0 +1,1 @@
+allow netutils_wrapper_exec netutils_wrapper_exec:file { execute  execute_no_trans  getattr  map  read };

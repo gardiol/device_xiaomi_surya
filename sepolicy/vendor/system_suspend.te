@@ -1,0 +1,1 @@
+#allow system_suspend system_suspend:binder { call };

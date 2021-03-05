@@ -1,0 +1,2 @@
+allow vendor_file vendor_file:dir { read };
+allow vendor_file vendor_file:file { getattr  read };

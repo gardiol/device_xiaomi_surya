@@ -1,0 +1,2 @@
+allow proc proc:file { write };
+allow proc proc:filesystem { associate };

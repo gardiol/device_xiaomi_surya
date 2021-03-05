@@ -1,0 +1,1 @@
+#allow latency_device latency_device:chr_file { write };

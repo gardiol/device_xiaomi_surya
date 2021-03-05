@@ -1,0 +1,1 @@
+allow hci_attach_dev hci_attach_dev:chr_file { ioctl  read  write };

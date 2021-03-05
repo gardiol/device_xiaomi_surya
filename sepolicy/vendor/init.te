@@ -1,0 +1,7 @@
+#allow init init:binder { call  transfer };
+allow init init:capability2 { block_suspend };
+allow init init:netlink_generic_socket { read  write };
+allow init init:netlink_kobject_uevent_socket { read };
+allow init init:netlink_route_socket { bind  create  nlmsg_write  read  write };
+allow init init:qipcrtr_socket { read  write };
+allow init init:unix_dgram_socket { sendto };

@@ -1,0 +1,1 @@
+#allow sysfs_usb_supply sysfs_usb_supply:file { open  read };

@@ -1,0 +1,1 @@
+allow sysfs_wake_lock sysfs_wake_lock:file { append  open  write };

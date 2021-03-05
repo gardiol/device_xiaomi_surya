@@ -1,0 +1,1 @@
+allow tee_device tee_device:chr_file { ioctl };

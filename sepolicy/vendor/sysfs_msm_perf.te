@@ -1,0 +1,1 @@
+#allow sysfs_msm_perf sysfs_msm_perf:file { open  write };

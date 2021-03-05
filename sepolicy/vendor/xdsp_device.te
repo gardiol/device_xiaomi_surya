@@ -1,0 +1,1 @@
+#allow xdsp_device xdsp_device:chr_file { ioctl };

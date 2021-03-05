@@ -1,0 +1,1 @@
+#allow qg_device qg_device:chr_file { ioctl  read  write };

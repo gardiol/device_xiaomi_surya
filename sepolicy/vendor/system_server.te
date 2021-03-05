@@ -1,0 +1,2 @@
+allow system_server system_server:binder { call };
+allow system_server system_server:netlink_netfilter_socket { read };

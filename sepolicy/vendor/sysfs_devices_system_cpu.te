@@ -1,0 +1,1 @@
+allow sysfs_devices_system_cpu sysfs_devices_system_cpu:file { write };

@@ -1,0 +1,1 @@
+allow ion_device ion_device:chr_file { ioctl };
