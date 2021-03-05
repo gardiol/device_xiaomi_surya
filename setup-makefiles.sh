@@ -1,40 +1,36 @@
 #!/bin/bash
-#
-# Copyright (C) 2020 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 
 set -e
 
+export INITIAL_COPYRIGHT_YEAR=2015
+
+# Required!
 DEVICE=surya
 VENDOR=xiaomi
 
-INITIAL_COPYRIGHT_YEAR=2020
-
-# Load extract_utils and do some sanity checks
+# Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="${MY_DIR}/../../.."
+LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
-if [ ! -f "${HELPER}" ]; then
-    echo "Unable to find helper script at ${HELPER}"
+HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+if [ ! -f "$HELPER" ]; then
+    echo "Unable to find helper script at $HELPER"
     exit 1
 fi
-source "${HELPER}"
+. "$HELPER"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
 write_headers
 
-write_makefiles "${MY_DIR}/proprietary-files.txt" true
+# The standard blobs
+write_makefiles "$MY_DIR"/proprietary-files.txt
 
-cat << EOF >> "$ANDROIDMK"
-EOF
-
-# Finish
+# We are done!
 write_footers
+
+
