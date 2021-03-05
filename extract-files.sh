@@ -39,6 +39,20 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/init/hw/init.qcom.rc)
+            sed -i 's|user vendor_qrtr|#user vendor_qrtr|g' "${2}"
+            sed -i 's|group vendor_qrtr|#group vendor_qrtr|g' "${2}"
+            ;;
+        vendor/etc/init/hw/init.target.rc)
+            sed -i 's|radio vendor_qti_diag inet|radio inet|g' "${2}"
+            ;;
+    esac
+}
+
+
+
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
