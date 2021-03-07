@@ -96,13 +96,14 @@ void load_device_properties() {
 	// Set some defaults to avoid empty settings:
 	std::string model = "M2007J20CG";
 	std::string device = hwname;
-	std::string fingerprint = "POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.7.0.QJGMIXM:user/release-keys";
-	std::string description = "surya_global-user 10 QKQ1.200512.002 V12.0.7.0.QJGMIXM release-keys";
+	std::string fingerprint = "POCO/surya_global/surya:10/QKQ1.200512.002/V12.0.9.0.QJGMIXM:user/release-keys";
+	std::string description = "surya_global-user 10 QKQ1.200512.002 V12.0.9.0.QJGMIXM release-keys";
 	
 	if (hwname == "surya") {
-		model = "M2007J20CG";
 	} else if (hwname == "karna") {
 		model = "M2007J20CI";
+	        fingerprint = "POCO/karna_global/karna:10/QKQ1.200512.002/V12.0.9.0.QJGMIXM:user/release-keys";
+	        description = "karna_global-user 10 QKQ1.200512.002 V12.0.9.0.QJGMIXM release-keys";
 	}
       
       	set_device_props(fingerprint, 
