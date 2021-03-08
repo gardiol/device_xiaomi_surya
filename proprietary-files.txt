@@ -15,6 +15,9 @@ vendor/etc/audio_platform_info_intcodec.xml|91e5f3b2d60b2071a3fd7a8892bfe651026e
 vendor/etc/audio_policy_configuration.xml|c17c925b997985ab98cfadc62938642b6739df0b
 vendor/etc/audio/audio_policy_configuration.xml|c17c925b997985ab98cfadc62938642b6739df0b
 
+# Camera - from custom compilation due to Surya camera bug
+lib/libcameraservice.so|3ef8e89a4ef8275b0f59afe57ca72af72eee1e20
+
 # Camera
 lib64/libCameraEffectJNI.so
 lib64/libarcsoft_deflicker.so
