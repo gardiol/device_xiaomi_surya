@@ -1,1 +1,1 @@
-#allow qdsp_device qdsp_device:chr_file { ioctl };
+allow qdsp_device qdsp_device:chr_file { ioctl };

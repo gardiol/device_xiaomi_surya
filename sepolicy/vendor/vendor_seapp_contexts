@@ -1,0 +1,17 @@
+user=_app seinfo=tango name=com.google.tango:app domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=timeserviceapp name=com.qualcomm.timeservice domain=timeservice_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.telephony domain=qtelephony type=app_data_file levelFrom=all
+user=radio seinfo=platform name=.qtidataservices domain=qtidataservices_app type=radio_data_file
+user=radio seinfo=platform name=.imshelperservice domain=imshelper_app type=imshelper_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.poweroffalarm domain=poweroffalarm_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.perfdump domain=perfdump_app type=system_app_data_file
+user=system seinfo=platform name=com.qualcomm.qti.qdma domain=qdma_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.seccamservice:remote domain=seccam_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.longcheertel.cit.sensor domain=sensors_test_app type=system_app_data_file levelFrom=all
+user=_app seinfo=sysmonapp domain=sysmonapp_app name=com.qualcomm.sysmonappInternal type=app_data_file levelFrom=all
+user=_app seinfo=sysmonapp domain=sysmonapp_app name=com.qualcomm.qti.sysmonappExternal type=app_data_file levelFrom=all
+user=_app seinfo=qwesasapp domain=qwesas_app name=com.qualcomm.qti.qwes.AndroidService type=app_data_file levelFrom=all
+user=_app seinfo=qwesasapp domain=qwesas_app name=com.qualcomm.qti.qwes.AndroidService.QWESAS type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=ssg_app name=com.qualcomm.qti.qms.service.connectionsecurity type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=ssg_app name=com.qualcomm.qti.qms.service.telemetry type=app_data_file levelFrom=all
+user=_app seinfo=ssgapp domain=ssg_app name=com.qualcomm.qti.qms.service.trustzoneaccess type=app_data_file levelFrom=all

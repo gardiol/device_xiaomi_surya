@@ -1,1 +1,1 @@
-#allow sysfs_graphics sysfs_graphics:file { read };
+allow sysfs_graphics sysfs_graphics:file { read };
