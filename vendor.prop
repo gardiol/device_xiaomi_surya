@@ -11,7 +11,7 @@ ro.config.media_vol_steps=25
 vendor.audio.adm.buffering.ms=2
 vendor.audio.feature.compr_voip.enable=false
 vendor.audio.hw.aac.encoder=true
-vendor.voice.path.for.pcm.voip=false
+vendor.voice.path.for.pcm.voip=true
 
 # Display
 ro.surface_flinger.set_display_power_timer_ms=1000
