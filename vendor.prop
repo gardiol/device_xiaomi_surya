@@ -7,6 +7,7 @@ ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sfx.scenario=true
 ro.vendor.audio.soundfx.usb=true
 ro.config.media_vol_steps=25
+vendor.audio.adm.buffering.ms=2
 vendor.audio.feature.compr_voip.enable=false
 vendor.audio.hw.aac.encoder=true
 vendor.voice.path.for.pcm.voip=false
