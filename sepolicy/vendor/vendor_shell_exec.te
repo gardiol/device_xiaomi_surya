@@ -1,0 +1,1 @@
+allow vendor_shell_exec vendor_shell_exec:file { execute_no_trans };

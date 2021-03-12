@@ -1,0 +1,2 @@
+allow netd netd:binder { call };
+allow netd netd:unix_stream_socket { connectto };

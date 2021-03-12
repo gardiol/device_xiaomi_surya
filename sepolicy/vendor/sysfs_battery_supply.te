@@ -1,1 +1,0 @@
-allow sysfs_battery_supply sysfs_battery_supply:file { open  read };

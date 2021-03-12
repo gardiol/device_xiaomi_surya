@@ -1,0 +1,1 @@
+allow uhid_device uhid_device:chr_file { ioctl  open  write };

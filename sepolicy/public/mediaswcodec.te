@@ -1,0 +1,1 @@
+allow mediaswcodec mediaswcodec:binder { transfer };

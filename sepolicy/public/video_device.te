@@ -1,0 +1,1 @@
+allow video_device video_device:chr_file { ioctl  open  read };

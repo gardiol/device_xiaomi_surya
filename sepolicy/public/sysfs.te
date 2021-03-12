@@ -1,0 +1,2 @@
+allow sysfs sysfs:dir { open  read };
+allow sysfs sysfs:file { getattr  open  read  write };

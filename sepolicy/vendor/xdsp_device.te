@@ -1,2 +1,0 @@
-type xdsp_device, file_type;
-allow xdsp_device xdsp_device:chr_file { ioctl };

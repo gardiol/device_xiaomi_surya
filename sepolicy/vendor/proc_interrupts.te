@@ -1,1 +1,0 @@
-allow proc_interrupts proc_interrupts:file { read };

@@ -1,0 +1,1 @@
+allow system_suspend_hwservice system_suspend_hwservice:hwservice_manager { find };

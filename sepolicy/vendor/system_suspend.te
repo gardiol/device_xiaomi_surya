@@ -1,2 +1,0 @@
-#type system_suspend, domain, coredomain, system_suspend_server;
-#allow system_suspend system_suspend:binder { call };

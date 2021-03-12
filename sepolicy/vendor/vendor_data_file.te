@@ -1,0 +1,1 @@
+allow vendor_data_file vendor_data_file:file { append  getattr  ioctl  lock  open  read };

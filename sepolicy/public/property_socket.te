@@ -1,0 +1,1 @@
+allow property_socket property_socket:sock_file { write };

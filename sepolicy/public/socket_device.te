@@ -1,0 +1,2 @@
+allow socket_device socket_device:dir { add_name  remove_name  write };
+allow socket_device socket_device:sock_file { create  setattr  unlink  write };

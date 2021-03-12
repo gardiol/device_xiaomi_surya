@@ -1,0 +1,1 @@
+allow sysfs_loop sysfs_loop:file { open  read };

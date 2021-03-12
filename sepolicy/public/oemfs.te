@@ -1,0 +1,1 @@
+allow oemfs oemfs:dir { search };

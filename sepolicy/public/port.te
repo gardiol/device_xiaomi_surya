@@ -1,0 +1,2 @@
+allow port port:tcp_socket { name_bind };
+allow port port:udp_socket { name_bind };

@@ -1,0 +1,2 @@
+type qdsp_device, file_type;
+allow qdsp_device qdsp_device:chr_file { ioctl  open  read };

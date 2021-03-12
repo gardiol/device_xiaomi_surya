@@ -1,0 +1,1 @@
+allow node node:udp_socket { node_bind };

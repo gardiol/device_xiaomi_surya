@@ -1,0 +1,1 @@
+allow system_prop system_prop:file { getattr  map  open  read };

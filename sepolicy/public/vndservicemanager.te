@@ -1,0 +1,1 @@
+allow vndservicemanager vndservicemanager:binder { call  transfer };

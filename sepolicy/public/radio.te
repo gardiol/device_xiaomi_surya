@@ -1,0 +1,2 @@
+allow radio radio:binder { call };
+allow radio radio:qipcrtr_socket { read };

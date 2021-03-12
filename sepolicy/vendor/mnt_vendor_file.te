@@ -1,0 +1,2 @@
+allow mnt_vendor_file mnt_vendor_file:dir { getattr  open  read };
+allow mnt_vendor_file mnt_vendor_file:file { append  getattr  open  read };

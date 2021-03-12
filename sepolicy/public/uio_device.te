@@ -1,0 +1,1 @@
+allow uio_device uio_device:chr_file { map  open  read };

@@ -1,0 +1,1 @@
+allow sysfs_net sysfs_net:file { open  read };

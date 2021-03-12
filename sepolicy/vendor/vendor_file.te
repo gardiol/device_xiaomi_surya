@@ -1,2 +1,3 @@
+allow vendor_file vendor_file:file { execute  execute_no_trans  getattr  map  open  read };
+allow vendor_file vendor_file:system { module_load };
 allow vendor_file vendor_file:dir { read };
-allow vendor_file vendor_file:file { getattr  read };
