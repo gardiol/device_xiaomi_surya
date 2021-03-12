@@ -1,1 +1,5 @@
 type sysfs_kgsl, sysfs_type,fs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
+type sysfs_graphics, sysfs_type, fs_type;
+type sysfs_usb_supply, sysfs_type, fs_type;
+type sysfs_ledcit, sysfs_type, fs_type;

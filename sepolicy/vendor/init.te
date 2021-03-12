@@ -1,4 +1,4 @@
-allow init init:binder { call  transfer };
+#allow init init:binder { call  transfer };
 allow init init:capability2 { block_suspend };
 allow init init:netlink_generic_socket { read  write };
 allow init init:netlink_kobject_uevent_socket { read };

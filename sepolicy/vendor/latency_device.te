@@ -1,1 +1,2 @@
+type latency_device, file_type;
 allow latency_device latency_device:chr_file { write };

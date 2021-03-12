@@ -1,1 +1,2 @@
+type sysfs_msm_perf, sysfs_type, fs_type;
 allow sysfs_msm_perf sysfs_msm_perf:file { open  write };

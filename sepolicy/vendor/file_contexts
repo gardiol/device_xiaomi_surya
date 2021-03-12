@@ -1,2 +1,15 @@
 
 /dev/at_usb0 u:object_r:at_device:s0
+
+/dev/diag u:object_r:diag_device:s0
+
+/dev/ipa u:object_r:ipa_dev:s0
+
+/dev/adsprpc-smd u:object_r:qdsp_device:s0
+
+/dev/qg	u:object_r:qg_device:s0
+
+/dev/qg_battery u:object_r:qg_device:s0
+
+/dev/adsprpc-smd-secure u:object_r:xdsp_device:s0
+

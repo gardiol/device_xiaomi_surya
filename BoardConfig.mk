@@ -150,12 +150,12 @@ TARGET_USES_MKE2FS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/private \
     device/qcom/sepolicy/qva/private \
-#    $(DEVICE_PATH)/sepolicy/private
+    $(DEVICE_PATH)/sepolicy/private
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public \
-#    $(DEVICE_PATH)/sepolicy/public
+    $(DEVICE_PATH)/sepolicy/public
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 

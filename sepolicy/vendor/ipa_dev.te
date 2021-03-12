@@ -1,1 +1,2 @@
+type ipa_dev, file_type;
 allow ipa_dev ipa_dev:chr_file { read };
