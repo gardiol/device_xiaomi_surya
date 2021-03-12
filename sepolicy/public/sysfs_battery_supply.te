@@ -1,2 +1,0 @@
-allow sysfs_battery_supply sysfs_battery_supply:dir { search };
-allow sysfs_battery_supply sysfs_battery_supply:file { getattr  open  read  setattr };
