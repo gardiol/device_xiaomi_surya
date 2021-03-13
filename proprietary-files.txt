@@ -282,6 +282,9 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
+# Camera service - from surya
+lib/libcameraservice.so
+
 # Display calibration - from surya
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
