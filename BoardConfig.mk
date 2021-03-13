@@ -152,19 +152,21 @@ SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private 
+    device/qcom/sepolicy/qva/private \
+    $(DEVICE_PATH)/sepolicy/private
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public 
-
-BOARD_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/product/private \
-    $(DEVICE_PATH)/sepolicy/private
-
-BOARD_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/product/public \
+    device/qcom/sepolicy/qva/public \
     $(DEVICE_PATH)/sepolicy/public
+
+#BOARD_PRIVATE_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/product/private \
+#    $(DEVICE_PATH)/sepolicy/private
+
+#BOARD_PUBLIC_SEPOLICY_DIR += \
+#    device/qcom/sepolicy/product/public \
+#    $(DEVICE_PATH)/sepolicy/public
 
 BOARD_SEPOLICY_DIRS := \
     $(DEVICE_PATH)/sepolicy/vendor
