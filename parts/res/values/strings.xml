@@ -25,6 +25,9 @@
     <string name="refresh_rate_tile_title">Refresh Rate</string>
     <string name="refresh_rate_tile_disabled">Battery saver enabled</string>
 
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Dirac sound</string>
+
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
