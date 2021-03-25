@@ -31,7 +31,6 @@
         <SwitchPreference
             android:key="gesture_pick_up"
             android:defaultValue="false"
-            android:icon="@drawable/ic_pickup"
             android:title="@string/pick_up_gesture_title"
             android:summary="@string/pick_up_gesture_summary" />
 
@@ -44,7 +43,6 @@
         <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
-            android:icon="@drawable/ic_pocket"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary" />
 
