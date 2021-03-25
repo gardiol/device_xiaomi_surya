@@ -8,8 +8,11 @@ BUILD_BROKEN_DUP_RULES := true
 
 DEVICE_PATH := device/xiaomi/surya
 
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Architecture
 TARGET_ARCH := arm64
