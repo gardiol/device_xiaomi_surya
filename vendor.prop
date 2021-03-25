@@ -384,5 +384,7 @@ persist.vendor.quick.charge=1
 # MIUI Camera
 ro.miui.notch=1
 
+# Enable dynamic FPS
+vendor.display.res_switch_en=1 
 
 import /vendor/build_${ro.boot.product.hardware.sku}.prop
