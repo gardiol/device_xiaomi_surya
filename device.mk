@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Device settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     libdisplayconfig \
