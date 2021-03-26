@@ -20,7 +20,7 @@ package org.lineageos.settings.refresh_rate;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class RefreshRateSettingsActivity extends PreferenceActivity {
+public class RefreshRateActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

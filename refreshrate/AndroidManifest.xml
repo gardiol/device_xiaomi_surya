@@ -39,7 +39,7 @@
         </receiver>
 
         <activity
-            android:name=".DevicePreferenceActivity"
+            android:name=".RefreshRateActivity"
             android:label="@string/device_settings_app_name"
             android:theme="@style/Theme.Main">
             <intent-filter>
