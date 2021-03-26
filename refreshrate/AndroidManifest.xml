@@ -50,7 +50,7 @@
                 android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/device_min_refresh_rate" />
+                android:resource="@string/device_refresh_rate" />
         </activity>
 
     </application>
