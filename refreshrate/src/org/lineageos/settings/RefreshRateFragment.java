@@ -61,7 +61,7 @@ public class RefreshRateFragment extends PreferenceFragment
                 Activity.MODE_PRIVATE);
 
 	mPrefRefreshRate = (ListPreference) findPreference( "pref_refresh_rate" );
-	mPrefRefreshRate.setOnPreferenceChangeListener(PrefListener);
+//	mPrefRefreshRate.setOnPreferenceChangeListener(PrefListener);
     }
 
     @Override
@@ -80,6 +80,10 @@ public class RefreshRateFragment extends PreferenceFragment
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return true;
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
     }
 
 }
