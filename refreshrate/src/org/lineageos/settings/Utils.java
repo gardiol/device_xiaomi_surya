@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.utils;
+package org.lineageos.settings.refresh_rate;
 
 import android.content.Context;
 import android.content.SharedPreferences;

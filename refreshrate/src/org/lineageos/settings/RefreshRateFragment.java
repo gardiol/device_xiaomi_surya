@@ -38,8 +38,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.ListPreference;
 
-public class RefreshRateFragment extends PreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+public class RefreshRateFragment extends PreferenceFragment {
 
     private TextView mTextView;
 
@@ -64,7 +63,7 @@ public class RefreshRateFragment extends PreferenceFragment
     public void onResume() {
         super.onResume();
         mPrefRefreshRate.setValue(Integer.toString(Utils.getRefreshRate(getActivity())));
-        mPrefRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+        mPrefRefreshRate.setSummary(mPrefRefreshRate.getEntry());
     }
 
     @Override
@@ -81,16 +80,16 @@ public class RefreshRateFragment extends PreferenceFragment
 
     private final Preference.OnPreferenceChangeListener PrefListener =
             new Preference.OnPreferenceChangeListener() {
-            
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object value) {
 
-                        SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
+                        SharedPreferences sharedPref = getActivity().getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putInt("refresh_rate", refreshRate);
+                        editor.putInt("refresh_rate", Integer.parseInt((String) value) );
                         editor.commit();
 
                         Utils.setRefreshRate(Integer.parseInt((String) value));
                     return true;
-            };
+            }
+	};
 }
