@@ -36,11 +36,4 @@
         android:textSize="18sp"
         android:textAlignment="viewStart" />
 
-    <Switch
-        android:id="@android:id/switch_widget"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:background="@null" />
-
 </LinearLayout>

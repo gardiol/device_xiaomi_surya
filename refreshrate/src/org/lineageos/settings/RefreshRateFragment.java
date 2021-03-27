@@ -31,21 +31,17 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 
 public class RefreshRateFragment extends PreferenceFragment
-        implements CompoundButton.OnCheckedChangeListener, Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener {
 
     private TextView mTextView;
-    private View mSwitchBar;
 
     private ListPreference mPrefRefreshRate;
 
@@ -54,19 +50,25 @@ public class RefreshRateFragment extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.refresh_rate_settings);
+
         final ActionBar actionBar = getActivity().getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        SharedPreferences prefs = getActivity().getSharedPreferences("refresh_rate_settings",
-                Activity.MODE_PRIVATE);
+        SharedPreferences prefs = getActivity().getSharedPreferences("refresh_rate_settings", Activity.MODE_PRIVATE);
 
-	mPrefRefreshRate = (ListPreference) findPreference( "pref_refresh_rate" );
-//	mPrefRefreshRate.setOnPreferenceChangeListener(PrefListener);
+        mPrefRefreshRate = (ListPreference) findPreference( "pref_refresh_rate" );
+        mPrefRefreshRate.setOnPreferenceChangeListener(PrefListener);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public void onResume() {
+        super.onResume();
+        mPrefRefreshRate.setValue(Integer.toString(Utils.getRefreshRate(getActivity())));
+        mPrefRefreshRate.setSummary(mPrefMinRefreshRate.getEntry());
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = LayoutInflater.from(getContext()).inflate(R.layout.refresh_rate, container, false);
         ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
         return view;
@@ -77,13 +79,18 @@ public class RefreshRateFragment extends PreferenceFragment
         super.onViewCreated(view, savedInstanceState);
     }
 
-    @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return true;
-    }
+    private final Preference.OnPreferenceChangeListener PrefListener =
+            new Preference.OnPreferenceChangeListener() {
+            
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object value) {
 
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-    }
+                        SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPref.edit();
+                        editor.putInt("refresh_rate", refreshRate);
+                        editor.commit();
 
+                        Utils.setRefreshRate(Integer.parseInt((String) value));
+                    return true;
+            };
 }

@@ -26,7 +26,6 @@ public class RefreshRateActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new RefreshRateFragment()).commit();
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new RefreshRateFragment()).commit();
     }
 }

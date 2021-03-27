@@ -12,5 +12,5 @@
      limitations under the License.
 -->
 <resources>
-    <string name="device_refresh_rate">Willy Willy Willy</string>
+    <string name="device_refresh_rate">Refresh Rate</string>
 </resources>
