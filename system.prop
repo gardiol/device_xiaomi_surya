@@ -12,7 +12,7 @@ vendor.bluetooth.soc=cherokee
 ro.netflix.bsp_rev=Q6150-17263-1
 
 # Set stock DPI
-ro.sf.lcd_density=420
+ro.sf.lcd_density=400
 
 #system props for the MM modules
 vendor.mm.enable.qcom_parser=131071983
