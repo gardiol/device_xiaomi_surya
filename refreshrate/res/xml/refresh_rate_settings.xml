@@ -18,11 +18,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/device_refresh_rate">
 
-    <ListPreference
-        android:key="pref_refresh_rate"
-        android:title="@string/device_refresh_rate"
-        android:entries="@array/device_refresh_rates"
-        android:entryValues="@array/device_refresh_rates_val"
-        android:defaultValue="3" />
+    <PreferenceCategory
+        android:key="tilt_sensor"
+        android:title="@string/tilt_sensor_title">
+
+        <ListPreference
+            android:key="pref_refresh_rate"
+            android:title="@string/device_refresh_rate"
+            android:entries="@array/device_refresh_rates"
+            android:entryValues="@array/device_refresh_rates_val"
+            android:defaultValue="2" />
+
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="footer_preference"
+        android:title="@string/refresh_rate_description"
+        android:selectable="false" />
 
 </PreferenceScreen>
