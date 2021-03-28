@@ -71,7 +71,7 @@ public class RefreshRateTileService extends TileService {
             currentRefreshRate++;
         }
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("refresh_rate", Integer.parseInt(refreshRateValues[currentRefreshRate]); );
+        editor.putInt("refresh_rate", Integer.parseInt(refreshRateValues[currentRefreshRate]) );
         editor.commit();
 
         Utils.setRefreshRate( Integer.parseInt(refreshRateValues[currentRefreshRate]) );
