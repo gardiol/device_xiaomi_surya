@@ -17,7 +17,7 @@
 package org.lineageos.settings.refresh_rate;
 
 import android.content.Context;
-import android.os.PowerManager;
+import android.content.SharedPreferences;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
@@ -72,7 +72,7 @@ public class RefreshRateTileService extends TileService {
             currentRefreshRate++;
         }
         
-	SharedPreferences sharedPref = getActivity().getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
+	SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("refresh_rate", Integer.parseInt(refreshRateValues[currentRefreshRate]) );
         editor.commit();
