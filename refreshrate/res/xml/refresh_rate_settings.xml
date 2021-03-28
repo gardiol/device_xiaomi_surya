@@ -20,7 +20,7 @@
 
     <PreferenceCategory
         android:key="tilt_sensor"
-        android:title="@string/tilt_sensor_title">
+        android:title="@string/refresh_rate_title">
 
         <ListPreference
             android:key="pref_refresh_rate"

@@ -88,6 +88,9 @@ public class RefreshRateFragment extends PreferenceFragment {
                         editor.putInt("refresh_rate", Integer.parseInt((String) value) );
                         editor.commit();
 
+                        int refreshRateIndex = mPrefRefreshRate.findIndexOfValue((String) value);
+			mPrefRefreshRate.setSummary(mPrefRefreshRate.getEntries()[refreshRateIndex]);
+
                         Utils.setRefreshRate(Integer.parseInt((String) value));
                     return true;
             }

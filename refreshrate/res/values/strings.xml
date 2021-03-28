@@ -13,6 +13,7 @@
 -->
 <resources>
     <string name="device_refresh_rate">Refresh Rate</string>
-    <string name="device_refresh_rate_summary">Set Screen Smmothness</string>
-    <string name="refresh_rate_description">Lower values means more battery save, higher values smoother screen experience.</string>
+    <string name="device_refresh_rate_summary">Set screen refresh rate</string>
+    <string name="device_refresh_rate_title">Select refresh rate</string>
+    <string name="refresh_rate_description">Lower values delivers less power usage so that your battery will last longer while higher values provides a smoother screen experience.</string>
 </resources>
