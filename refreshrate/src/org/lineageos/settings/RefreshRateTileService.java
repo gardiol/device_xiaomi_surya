@@ -21,7 +21,8 @@ import android.os.PowerManager;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
-import org.lineageos.settings.R;
+//import org.lineageos.settings.R;
+import androidx.preference.Preference;
 
 import java.util.Arrays;
 
