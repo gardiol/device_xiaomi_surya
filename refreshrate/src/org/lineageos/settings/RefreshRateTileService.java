@@ -39,8 +39,8 @@ public class RefreshRateTileService extends TileService {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
-        refreshRates = context.getResources().getStringArray(R.array.device_refresh_rates);
-        refreshRateValues = context.getResources().getStringArray(R.array.device_refresh_rates_val);
+        refreshRates = context.getResources().getStringArray(R.array.refresh_rates_list);
+        refreshRateValues = context.getResources().getStringArray(R.array.refresh_rates_values);
     }
 
     private void updateCurrentRefreshRate() {
@@ -71,16 +71,11 @@ public class RefreshRateTileService extends TileService {
         } else {
             currentRefreshRate++;
         }
-        
-	SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
+	    SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("refresh_rate", Integer.parseInt(refreshRateValues[currentRefreshRate]) );
         editor.commit();
-
         Utils.setRefreshRate( Integer.parseInt(refreshRateValues[currentRefreshRate]) );
-
-
-
         updateTileDescription();
     }
 }

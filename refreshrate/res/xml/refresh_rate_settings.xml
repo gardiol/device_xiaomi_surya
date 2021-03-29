@@ -25,8 +25,8 @@
         <ListPreference
             android:key="pref_refresh_rate"
             android:title="@string/device_refresh_rate"
-            android:entries="@array/device_refresh_rates"
-            android:entryValues="@array/device_refresh_rates_val"
+            android:entries="@array/refresh_rates_list"
+            android:entryValues="@array/refresh_rates_values"
             android:defaultValue="2" />
 
     </PreferenceCategory>

@@ -24,10 +24,6 @@ import android.os.ServiceManager;
 
 public class Utils {
 
-
-    
-    
-    
     public static int getRefreshRate(Context context) {
         SharedPreferences sharedPref = context.getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
         return sharedPref.getInt("refresh_rate", 2);

@@ -19,32 +19,20 @@ package org.lineageos.settings.refresh_rate;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.ListPreference;
 
 public class RefreshRateFragment extends PreferenceFragment {
 
-    private TextView mTextView;
-
     private ListPreference mPrefRefreshRate;
-
-    private Handler mHandler = new Handler();
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -82,16 +70,14 @@ public class RefreshRateFragment extends PreferenceFragment {
             new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object value) {
+                    SharedPreferences sharedPref = getActivity().getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putInt("refresh_rate", Integer.parseInt((String) value) );
+                    editor.commit();
 
-                        SharedPreferences sharedPref = getActivity().getSharedPreferences("pref_refresh_rate", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putInt("refresh_rate", Integer.parseInt((String) value) );
-                        editor.commit();
-
-                        int refreshRateIndex = mPrefRefreshRate.findIndexOfValue((String) value);
-			mPrefRefreshRate.setSummary(mPrefRefreshRate.getEntries()[refreshRateIndex]);
-
-                        Utils.setRefreshRate(Integer.parseInt((String) value));
+                    int refreshRateIndex = mPrefRefreshRate.findIndexOfValue((String) value);
+                    mPrefRefreshRate.setSummary(mPrefRefreshRate.getEntries()[refreshRateIndex]);
+                    Utils.setRefreshRate(Integer.parseInt((String) value));
                     return true;
             }
 	};

@@ -12,12 +12,12 @@
      limitations under the License.
 -->
 <resources>
-    <string-array name="device_refresh_rates">
+    <string-array name="refresh_rates_list">
         <item>60 Hz</item>
         <item>90 Hz</item>
         <item>120 Hz</item>
     </string-array>
-    <string-array name="device_refresh_rates_val">
+    <string-array name="refresh_rates_values">
         <item>2</item>
         <item>3</item>
         <item>4</item>
