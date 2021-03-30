@@ -40,7 +40,8 @@
 
         <activity
             android:name=".RefreshRateActivity"
-            android:label="@string/device_refresh_rate">
+            android:label="@string/device_refresh_rate"
+	    android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
