@@ -15,5 +15,6 @@
 -->
 
 <resources>
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">73.29%</item>
+    <item name="fingerprint_sensor_location_fraction_x" type="fraction">100%</item>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">40%</item>
 </resources>
