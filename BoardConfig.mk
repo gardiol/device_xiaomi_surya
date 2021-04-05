@@ -7,7 +7,7 @@
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/toco
+DEVICE_PATH := device/xiaomi/surya
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -18,7 +18,7 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := toco_defconfig
+TARGET_KERNEL_CONFIG := surya_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -81,4 +81,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from proprietary files
-include vendor/xiaomi/toco/BoardConfigVendor.mk
+include vendor/xiaomi/surya/BoardConfigVendor.mk

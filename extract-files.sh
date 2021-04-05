@@ -19,7 +19,7 @@ fi
 
 set -e
 
-export DEVICE=toco
+export DEVICE=surya
 export DEVICE_COMMON=sm6150-common
 export VENDOR=xiaomi
 

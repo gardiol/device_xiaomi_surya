@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "TocoWifiOverlay",
-    theme: "TocoWifiOverlay",
+    name: "SuryaWifiOverlay",
+    theme: "SuryaWifiOverlay",
     sdk_version: "current",
     product_specific: true
 }

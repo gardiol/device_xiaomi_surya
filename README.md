@@ -1,26 +1,26 @@
 Copyright (C) 2021 The LineageOS Project
 
-Device configuration for Xiaomi Mi Note 10 Lite
+Device configuration for POCO X3 / X3 NFC
 =========================================
 
-The Xiaomi Mi Note 10 Lite (codenamed _"toco"_) is a mid-range smartphone from Xiaomi.
+The POCO X3 / X3 NFC (codenamed _"karna / surya"_) are mid-range smartphones from Xiaomi's sub-brand POCO.
 
-It was announced in May 2020.
+Both devices were announced and released September 2020.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Dual-core 2.2 GHz Kryo 470 Gold & Hexa-core 1.8 GHz Kryo 470 Silver
-Chipset | Qualcomm SDM730 Snapdragon 730G
+CPU     | Dual-core 2.3 GHz Kryo 470 Gold & Hexa-core 1.8 GHz Kryo 470 Silver
+Chipset | Qualcomm SM7150-AC Snapdragon 732G
 GPU     | Adreno 618
 Memory  | 6/8 GB LPDDR4x
 Storage | 64/128 GB UFS 2.1
-Shipped Android Version | 10
-Battery | Non-removable Li-Po 5260 mAh
-Display | 1080 x 2340 pixels, 6.47 inches (~398 ppi pixel density)
-Camera  | Sony IMX686 64 MP f/1.89, 8MP ultrawide camera, 5MP depth sensor, 2MP macro camera
+Shipped Android Version | 10 with MIUI 12
+Battery | Non-removable Li-Po 6000/5160 mAh
+Display | 1080 x 2400 pixels, 6.67 inches (~395 ppi pixel density)
+Camera  | Sony IMX682 64 MP f/1.89, 13MP ultrawide camera, 2MP macro camera, 2MP depth sensor
 
 ## Device picture
 
-![Xiaomi Mi Note 10 Lite](https://i01.appmifile.com/webfile/globalimg/products/pc/mi-note-10-lite/section03-s2.png "Xiaomi Mi Note 10 Lite in Midnight Black")
+![POCO X3](https://i01.appmifile.com/webfile/globalimg/products/pc/poco-x3-nfc/specs-header.png "POCO X3 in Cobalt Blue & Shadow Gray")
