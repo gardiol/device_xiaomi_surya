@@ -30,6 +30,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 
 # Kernel
 TARGET_KERNEL_CONFIG := surya_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
