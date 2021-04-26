@@ -178,6 +178,9 @@ echo 4-5     > /dev/cpuset/background/cpus
 echo 2-5     > /dev/cpuset/system-background/cpus
 echo 2-5     > /dev/cpuset/restricted/cpus
 
+# Enable EAS at the end
+echo 1 > /proc/sys/kernel/sched_energy_aware
+
 # Turn on sleep modes.
 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
 
