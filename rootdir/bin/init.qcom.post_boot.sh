@@ -78,10 +78,6 @@ function configure_memory_parameters() {
     echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
 }
 
-# Setting b.L scheduler parameters
-echo 85 > /proc/sys/kernel/sched_downmigrate
-echo 95 > /proc/sys/kernel/sched_upmigrate
-
 # configure governor settings for little cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
