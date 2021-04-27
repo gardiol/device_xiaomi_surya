@@ -233,8 +233,4 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M73,72 C34.5904014,71.9994844 10.2575195,71.9993984 0.00135404332,71.9997422 C-10.2556836,72.0000859 -34.5894683,72.0001719 -73,72 L-73,0 L73,0 L73,72 Z</string>
-
-    <!-- True if the display hardware only has brightness buckets rather than a full range of
-         backlight values -->
-    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
 </resources>
