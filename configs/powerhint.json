@@ -14,6 +14,7 @@
 			"Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
 			"Values": [
 				"9999999",
+				"1324800",
 				"1248000",
 				"576000"
 			],
@@ -34,6 +35,7 @@
 			"Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
 			"Values": [
 				"9999999",
+				"1094400",
 				"652800"
 			],
 			"ResetOnInit": true
@@ -85,15 +87,6 @@
 			"ResetOnInit": true
 		},
 		{
-			"Name": "TASchedtuneBoost",
-			"Path": "/dev/stune/top-app/schedtune.boost",
-			"Values": [
-				"40",
-				"10"
-			],
-			"ResetOnInit": true
-		},
-		{
 			"Name": "CPUBWHystTriggerCount",
 			"Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count",
 			"Values": [
@@ -135,7 +128,7 @@
 			"Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
 			"Values": [
 				"6881",
-				"2597",
+				"3879",
 				"762"
 			],
 			"ResetOnInit": true
@@ -212,15 +205,15 @@
 		},
 		{
 			"PowerHint": "INTERACTION",
-			"Node": "CPULittleClusterMinFreq",
+			"Node": "CPUBigClusterMinFreq",
 			"Duration": 0,
-			"Value": "1248000"
+			"Value": "1094400"
 		},
 		{
 			"PowerHint": "INTERACTION",
-			"Node": "TASchedtuneBoost",
+			"Node": "CPULittleClusterMinFreq",
 			"Duration": 0,
-			"Value": "40"
+			"Value": "1324800"
 		},
 		{
 			"PowerHint": "INTERACTION",
@@ -250,7 +243,7 @@
 			"PowerHint": "INTERACTION",
 			"Node": "LLCCBWMinFreq",
 			"Duration": 0,
-			"Value": "2597"
+			"Value": "3879"
 		},
 		{
 			"PowerHint": "LAUNCH",

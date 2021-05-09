@@ -80,17 +80,26 @@ function configure_memory_parameters() {
 
 # configure governor settings for little cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 2500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+echo 3000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/iowait_boost_enable
 
 # configure governor settings for big cluster
 echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
-echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
-echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
+echo 2500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
+echo 3000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
+echo 1 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/iowait_boost_enable
 
-# Configure default schedTune value for foreground/top-app
+# Configure default schedTune value
+echo 0 > /dev/stune/audio-app/schedtune.boost
+echo 0 > /dev/stune/audio-app/schedtune.prefer_idle
+echo 0 > /dev/stune/background/schedtune.boost
+echo 0 > /dev/stune/background/schedtune.prefer_idle
+echo 0 > /dev/stune/foreground/schedtune.boost
 echo 1 > /dev/stune/foreground/schedtune.prefer_idle
-echo 10 > /dev/stune/top-app/schedtune.boost
+echo 0 > /dev/stune/rt/schedtune.boost
+echo 0 > /dev/stune/rt/schedtune.prefer_idle
+echo 0 > /dev/stune/top-app/schedtune.boost
 echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
 # Report max frequency to unity tasks
@@ -176,11 +185,13 @@ do
 done
 
 # cpuset parameters
-echo 0-7     > /dev/cpuset/top-app/cpus
-echo 0-5,7 > /dev/cpuset/foreground/cpus
-echo 4-5     > /dev/cpuset/background/cpus
-echo 2-5     > /dev/cpuset/system-background/cpus
-echo 2-5     > /dev/cpuset/restricted/cpus
+echo 0-3,6-7 > /dev/cpuset/audio-app/cpus
+echo 2-5 > /dev/cpuset/background/cpus
+echo 0-3,6-7 > /dev/cpuset/camera-daemon/cpus
+echo 0-7 > /dev/cpuset/foreground/cpus
+echo 2-5 > /dev/cpuset/restricted/cpus
+echo 2-5 > /dev/cpuset/system-background/cpus
+echo 0-7 > /dev/cpuset/top-app/cpus
 
 # Enable EAS at the end
 echo 1 > /proc/sys/kernel/sched_energy_aware
