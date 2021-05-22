@@ -1,10 +1,13 @@
 # Audio
+aaudio.mmap_policy=1
+audio.offload.min.duration.secs=40
 persist.vendor.audio.hifi=false
 persist.vendor.audio.ring.filter.mask=0
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.soundfx.usb=true
 ro.config.media_vol_steps=25
 vendor.audio.feature.compr_voip.enable=false
+vendor.audio.hw.aac.encoder=false
 vendor.voice.path.for.pcm.voip=false
 
 # Display
