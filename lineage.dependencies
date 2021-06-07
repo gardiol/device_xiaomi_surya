@@ -1,0 +1,8 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "LineageOS/kernel_xiaomi_surya",
+        "target_path":  "kernel/xiaomi/surya",
+        "branch":       "lineage-18.1"
+    }
+]
