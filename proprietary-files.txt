@@ -1,5 +1,10 @@
 # surya package version: V12.0.8.0.RJGEUXM, unless stated otherwise
 
+
+# Camera service - from custom compilation
+lib/libcameraservice.so
+
+
 # Audio ACDB - from surya
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
