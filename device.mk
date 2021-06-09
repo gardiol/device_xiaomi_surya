@@ -136,6 +136,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Doze
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_surya
