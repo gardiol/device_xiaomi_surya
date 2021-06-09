@@ -130,6 +130,20 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti
+
+PRODUCT_PACKAGES += \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
 # Handheld hardware
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
