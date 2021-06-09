@@ -76,6 +76,13 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/xiaomi
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
