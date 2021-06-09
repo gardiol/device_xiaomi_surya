@@ -37,6 +37,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := surya,karna
 
@@ -55,6 +58,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
+# FM
+BOARD_HAVE_QCOM_FM := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
