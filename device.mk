@@ -192,6 +192,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_surya
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
