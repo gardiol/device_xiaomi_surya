@@ -1,0 +1,1 @@
+#allow system_server proc:file { getattr  open  read };
