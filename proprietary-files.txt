@@ -386,6 +386,9 @@ vendor/lib64/camera/fdconfigvideolite.bin
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera patched - from pinned (see vendor tree commit)
+lib/libcameraservice.so|78c11a11fa8691e42d3352aa7c0194a8a497dea8
+
 # Charger
 vendor/bin/hvdcp_opti
 
