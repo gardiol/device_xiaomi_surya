@@ -18,6 +18,9 @@
 /sys/devices/soc/soc:fpc1020.*/fingerdown_wait                       u:object_r:fingerprint_device:s0
 /sys/devices/soc/soc:fpc1020.*/wakeup_enable                         u:object_r:fingerprint_device:s0
 
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                  u:object_r:persist_subsys_file:s0
+
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.surya u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.surya        u:object_r:hal_light_default_exec:s0
