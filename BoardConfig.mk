@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/davinci
+DEVICE_PATH := device/xiaomi/surya
 
 # Inherit from proprietary files
-include vendor/xiaomi/davinci/BoardConfigVendor.mk
+include vendor/xiaomi/surya/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm64
@@ -38,7 +38,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := davinci,davinciin
+TARGET_OTA_ASSERT_DEVICE := surya,karna
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
@@ -94,8 +94,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
-ODM_MANIFEST_SKUS += davinci
-ODM_MANIFEST_DAVINCI_FILES := \
+ODM_MANIFEST_SKUS += surya
+ODM_MANIFEST_SURYA_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml \
     $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
 
